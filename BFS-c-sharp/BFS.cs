@@ -65,7 +65,7 @@ namespace BFS_c_sharp
                     else 
                     {
                         visited.TryGetValue(friend, out dist);
-                        if (dist <= depth && !friends.Contains(friend)) {
+                        if (!friends.Contains(friend)) {
                             friends.Add(friend);
                         }
                     }
